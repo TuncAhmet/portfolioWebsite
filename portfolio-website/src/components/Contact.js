@@ -34,7 +34,7 @@ export const Contact = () => {
     setButtonText("Send");
     let result = await response.json();
     setFormDetails(formInitialDetails);
-    if (result.code == 200) {
+    if (result.code === 200) {
       setStatus({ succes: true, message: 'Message sent successfully'});
     } else {
       setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
@@ -46,7 +46,7 @@ export const Contact = () => {
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
-            <img src={contactMe} alt="contact-image"></img>
+            <img src={contactMe} alt="contact"></img>
           </Col>
           <Col size={12} md={6}>
                 <h2>Contact Me</h2>

@@ -94,6 +94,10 @@ nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
 }
+nav.navbar.blue {
+  padding: 0px 0;
+  background-color: #4780A2;
+}
 nav.navbar .logo {
   width: 100%;
 }
@@ -359,7 +363,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
   position: relative;
 }
 .tools-bx {
-  background: #039889;
+  /* background: #039889; */
+  background: #447799;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -370,7 +375,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 	font-weight: 700;
 }
 .tools p {
-    color: #B8B8B8;
+    color: #fff;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -397,7 +402,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background-color: #151515;
+  /* background-color: black; */
 }
 .project h2 {
 	font-size: 45px;
@@ -531,6 +537,43 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 .project-card a:hover {
   color: orange;
 }
+
+/************ Certificates Css ************/
+.certificates {
+  padding: 80px 0 80px 0;
+  position: relative;
+  background: #447799;
+}
+.certificates h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+.certificates p {
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
+.certificates-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.certificates-slider .item img {
+  width: 85%;
+  /* height: 300px; */
+  margin: 0 auto 15px auto;
+}
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+
+
 
 /************ Contact Css ************/
 .contact {

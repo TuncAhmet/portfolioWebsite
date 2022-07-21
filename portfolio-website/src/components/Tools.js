@@ -35,26 +35,26 @@ export const Tools = () => {
                 <div className="col-12">
                     <div className="tools-bx wow zoomIn">
                         <h2>Tools</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>I can use these tools to create a project from scratch.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme tools-slider">
                             <div className="item">
-                                <img src={linux} alt="Image" />
+                                <img src={linux} alt="linux" />
                                 <h5>Linux OS</h5>
                             </div>
                             <div className="item">
-                                <img src={figma} alt="Image" />
+                                <img src={figma} alt="figma" />
                                 <h5>Figma</h5>
                             </div>
                             <div className="item">
-                                <img src={github} alt="Image" />
+                                <img src={github} alt="github" />
                                 <h5>GitHub</h5>
                             </div>
                             <div className="item">
-                                <img src={code} alt="Image" />
+                                <img src={code} alt="code" />
                                 <h5>Visual Studio Code</h5>
                             </div>
                             <div className="item">
-                                <img src={canva} alt="Image" />
+                                <img src={canva} alt="canva" />
                                 <h5>Canva</h5>
                             </div>
                         </Carousel>
@@ -62,7 +62,7 @@ export const Tools = () => {
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={colorSharp} alt="left-lighter" />
     </section>
   )
 }

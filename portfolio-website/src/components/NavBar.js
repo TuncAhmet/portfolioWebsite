@@ -19,6 +19,20 @@ export const NavBar = () => {
                 setScrolled(false);
             }
         }
+        
+        // const onScroll = () => {
+        //     if (window.scrollY > 50) {
+        //       setScrolled('scrolled');
+        //     } else if (window.scrollY > 1230) {
+        //       setScrolled('blue');
+        //     } else if (window.scrollY > 1630) {
+        //       setScrolled('black');
+        //     } else if (window.scrollY > 2380) {
+        //       setScrolled('blue');
+        //     } else if (window.scrollY > 3580) {
+        //       setScrolled('black');
+        //     }
+        //   }
 
         window.addEventListener('scroll', onScroll);
 
@@ -44,6 +58,7 @@ export const NavBar = () => {
                       <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
                       <Nav.Link href="#tools" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('tools')}>Tools</Nav.Link>
                       <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+                      <Nav.Link href="#certificates" className={activeLink ==='certificates' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('certificates')}>Certificates</Nav.Link> 
                     </Nav>
                     <span className='navbar-text'>
                       <div className='social-icons'>
