@@ -1,11 +1,11 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"
-import figma from "../assets/img/figma.svg"
-import linux from "../assets/img/linux.svg"
-import github from "../assets/img/github.svg"
-import code from "../assets/img/code.svg"
-import canva from "../assets/img/canva.svg"
+import figma from "../assets/img/figma.webp"
+import linux from "../assets/img/linux.webp"
+import github from "../assets/img/github.webp"
+import code from "../assets/img/code.webp"
+import canva from "../assets/img/canva.webp"
 
 export const Tools = () => {
   const responsive = {

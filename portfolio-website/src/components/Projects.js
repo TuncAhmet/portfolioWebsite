@@ -6,7 +6,7 @@ import rockPaperScissor from "../assets/img/rock-paper-scissor.png"
 import spaceInvaders from "../assets/img/space-invaders.png"
 import whackaMole from "../assets/img/whack-a-mole.png"
 import toDoList from "../assets/img/todolist.png"
-import calc from "../assets/img/calc.png"
+import calc from "../assets/img/calc-min.png"
 import weAccept from "../assets/img/we-accept.png"
 import portfolio from "../assets/img/portfolio.png"
 
@@ -17,11 +17,13 @@ export const Projects = () => {
     {
       title: "We Accept",
       description: "Clone & Development",
+      url : "#",
       imgUrl: weAccept,
     },
     {
       title: "Portfolio Website",
       description: "Design & Development",
+      url : "https://tunchahmet.netlify.app/",
       imgUrl: portfolio,
     }
   ];
@@ -30,34 +32,40 @@ export const Projects = () => {
     {
       title: "Space Invader",
       description: "Space Invader is a game where you try to destroy the alien invaders.",
+      url : "https://browsergames1.netlify.app/space-invaders/index.html",
       imgUrl: spaceInvaders,
     },
     {
       title: "Memory Game",
       description: "Click on cards to find matching pairs.",
+      url : "https://browsergames1.netlify.app/memory-game/index.html",
       imgUrl: memoryGame,
     },
     {
       title: "Whack a Mole",
       description: "Click on the mole to find out what it is.",
+      url : "https://browsergames1.netlify.app/whack-a-mole/index.html",
       imgUrl: whackaMole,
     },
     {
       title: "Rock Paper Scissors",
       description: "Click on buttons to play Rock Paper Scissors.",
+      url : "https://browsergames1.netlify.app/rock-paper-scissor/index.html",
       imgUrl: rockPaperScissor,
     },
   ];
 
   const apps = [
     {
-      title: "Calculator",
+      title: "Online Calculator",
       description: "Design & Development",
+      url : "https://kasiyoonlinecalculator.netlify.app",
       imgUrl: calc,
     },
     {
       title: "to-do List",
       description: "Design & Development",
+      url : "https://todolistfromtunc.netlify.app",
       imgUrl: toDoList,
     },
   ];
@@ -72,13 +80,13 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Websites</Nav.Link>
+                      <Nav.Link className="pointer" eventKey="first">Websites</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Games</Nav.Link>
+                      <Nav.Link className="pointer" eventKey="second">Games</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Apps</Nav.Link>
+                      <Nav.Link className="pointer" eventKey="third">Apps</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp">

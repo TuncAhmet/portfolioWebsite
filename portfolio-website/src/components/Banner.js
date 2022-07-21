@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Container,Row,Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-import headerImg from "../assets/img/header-img.svg"
-import laptop from "../assets/img/laptop.svg"
+import laptop from "../assets/img/laptop.webp"
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -45,7 +44,7 @@ export const Banner = () => {
         <section className="banner" id="home">
             <Container>
                 <Row className="align-items-center">
-                    <Col xs={12} md={6} xl={7}>
+                    <Col xs={12} md={6} lg={6} xl={7} xxl={8}>
                         <span className="tagline">Welcome to my Portfolio Website</span>
                         <h1>{`I'm Ahmet`}<span className="wrap"> {text}</span></h1>
                         <p>I'm a self taught software developer who focus on mostly web development. I'll seed my projects which I build on learning path to my portfolio website.</p>
@@ -54,7 +53,7 @@ export const Banner = () => {
                         </a>
                         
                     </Col>
-                    <Col xs={12} md={6} xl={5}>
+                    <Col xs={12} md={6} lg={6} xl={5} xxl={4}>
                         <img src={laptop} alt="Header Img"/>
                     </Col>
                 </Row>

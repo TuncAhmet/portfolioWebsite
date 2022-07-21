@@ -242,7 +242,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/back.png');
+  background-image: url('./assets/img/background.gif');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -264,6 +264,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+}
+.banner h1 span:hover {
+  color: #61dafb;
+  cursor: pointer;
 }
 .banner p {
   color: #B8B8B8;
@@ -514,6 +518,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
   right: 0;
   z-index: -4;
 }
+.pointer {
+  cursor: pointer;
+}
+
+/************ ProjectCard Css ************/
+.project-card a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+.project-card a:hover {
+  color: orange;
+}
 
 /************ Contact Css ************/
 .contact {
@@ -594,7 +611,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
     0% {
       transform: translatex(20px);
     }
-    12.5% {
+    12% {
       transform: translateY(14.14px);
       transform: translatex(14.14px);
     }
@@ -602,7 +619,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
       transform: translateY(20px);
       /* transform: translateX(0px); */
     }
-    37.5% {
+    37% {
       transform: translateY(14.14px);
       transform: translatex(-14.14px);
     }
@@ -610,7 +627,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
       transform: translatex(-20px);
       /* transform: translateY(0px); */
     }
-    62.5% {
+    62% {
       transform: translateY(-14.14px);
       transform: translatex(-14.14px);
     }
@@ -618,7 +635,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
       transform: translateY(-20px);
       /* transform: translatex(0px); */
     }
-    87.5% {
+    87% {
       transform: translateY(-14.14px);
       transform: translatex(14.14pxpx);
     }
@@ -698,7 +715,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 
 
 /************ App Css ************/
-/* .App {
+.App {
   text-align: center;
 }
 
@@ -735,4 +752,4 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
   to {
     transform: rotate(360deg);
   }
-} */
+}
