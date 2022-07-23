@@ -10,6 +10,8 @@ import java from '../assets/img/java.webp'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"
+import 'animate.css'
+import TrackVisibility from 'react-on-screen';
 
 export const Skills = () => {
   const responsive = {
@@ -34,6 +36,9 @@ export const Skills = () => {
 
   return (
     <section className="skill" id="skills">
+        <TrackVisibility>
+        {({isVisible}) =>
+            <div className={isVisible ? "animate__animated animate__fadeInLeft" : ""}>             
         <div className="container">
             <div className="row">
                 <div className="col-12">
@@ -83,6 +88,8 @@ export const Skills = () => {
             </div>
         </div>
         <img className="background-image-left" src={colorSharp} alt="left-lighter" />
+        </div>}
+        </TrackVisibility>
     </section>
   )
 }

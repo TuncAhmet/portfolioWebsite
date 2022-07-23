@@ -6,6 +6,8 @@ import linux from "../assets/img/linux.webp"
 import github from "../assets/img/github.webp"
 import code from "../assets/img/code.webp"
 import canva from "../assets/img/canva.webp"
+import 'animate.css'
+import TrackVisibility from 'react-on-screen';
 
 export const Tools = () => {
   const responsive = {
@@ -30,6 +32,9 @@ export const Tools = () => {
 
   return (
     <section className="tools" id="tools">
+      <TrackVisibility>
+      {({isVisible}) =>
+        <div className={isVisible ? "animate__animated animate__backInRight" : ""}>
         <div className="container">
             <div className="row">
                 <div className="col-12">
@@ -63,6 +68,8 @@ export const Tools = () => {
             </div>
         </div>
         <img className="background-image-left" src={colorSharp} alt="left-lighter" />
+        </div>}
+        </TrackVisibility>
     </section>
   )
 }

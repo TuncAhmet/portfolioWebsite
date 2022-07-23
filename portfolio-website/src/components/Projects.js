@@ -9,6 +9,8 @@ import toDoList from "../assets/img/todolist.png"
 import calc from "../assets/img/calc-min.png"
 import weAccept from "../assets/img/we-accept.png"
 import portfolio from "../assets/img/portfolio.png"
+import 'animate.css'
+import TrackVisibility from 'react-on-screen';
 
 
 export const Projects = () => {
@@ -72,72 +74,77 @@ export const Projects = () => {
 
   return (
     <section className="project" id="projects">
-      <Container>
-        <Row>
-          <Col size={12}>
-                <h2>Projects</h2>
-                <p>I'm building websites and creating apps and games during learning software engineering. <br/><br/> You will go to the project website if you click the "<b>click me</b>" text. </p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link className="pointer" eventKey="first">Websites</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link className="pointer" eventKey="second">Games</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link className="pointer" eventKey="third">Apps</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content id="slideInUp">
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          websites.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                      <Row>
-                          {
-                            games.map((project, index) => {
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...project}
-                                  />
-                              )
-                            })
-                          }
-                        </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                    <Row>
-                          {
-                            apps.map((project, index) => {
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...project}
-                                  />
-                              )
-                            })
-                          }
-                        </Row>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-          </Col>
-        </Row>
-      </Container>
-      <img className="background-image-right" src={colorSharp2} alt="right-lighter"></img>
+            <Container>
+              <Row>
+                <Col size={12}>
+                  <TrackVisibility>
+                    {({isVisible}) =>
+                      <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                      <h2>Projects</h2>
+                      <p>I'm building websites and creating apps and games during learning software engineering. <br/><br/> You will go to the project website if you click the "<b>click me</b>" text. </p>
+                      </div>}
+                      </TrackVisibility>
+                      <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                        <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                          <Nav.Item>
+                            <Nav.Link className="pointer" eventKey="first">Websites</Nav.Link>
+                          </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link className="pointer" eventKey="second">Games</Nav.Link>
+                          </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link className="pointer" eventKey="third">Apps</Nav.Link>
+                          </Nav.Item>
+                        </Nav>
+                        <Tab.Content id="slideInUp">
+                          <Tab.Pane eventKey="first">
+                            <Row>
+                              {
+                                websites.map((project, index) => {
+                                  return (
+                                    <ProjectCard
+                                      key={index}
+                                      {...project}
+                                      />
+                                  )
+                                })
+                              }
+                            </Row>
+                          </Tab.Pane>
+                          <Tab.Pane eventKey="second">
+                            <Row>
+                                {
+                                  games.map((project, index) => {
+                                    return (
+                                      <ProjectCard
+                                        key={index}
+                                        {...project}
+                                        />
+                                    )
+                                  })
+                                }
+                              </Row>
+                          </Tab.Pane>
+                          <Tab.Pane eventKey="third">
+                          <Row>
+                                {
+                                  apps.map((project, index) => {
+                                    return (
+                                      <ProjectCard
+                                        key={index}
+                                        {...project}
+                                        />
+                                    )
+                                  })
+                                }
+                              </Row>
+                          </Tab.Pane>
+                        </Tab.Content>
+                      </Tab.Container>
+                </Col>
+              </Row>
+            </Container>
+            <img className="background-image-right" src={colorSharp2} alt="right-lighter"></img>
     </section>
   )
 }
